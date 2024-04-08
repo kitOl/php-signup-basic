@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,11 +20,17 @@
         <nav>
             <a class="logo-header" href="index.php">Blogs</a>
             <ul class="nav-list">
-                <li><a href="index.php">Home</a></li>
+                <li><a class="active" href="index.php">Home</a></li>
                 <li><a href="discover.php">About us</a></li>
                 <li><a href="blog.php">Find Blogs</a></li>
-                <li><a href="signup.php">Sign up</a></li>
-                <li><a href="login.php">Log in</a></li>
+
+                <?php if (isset($_SESSION['useruid'])) : ?>
+                    <li><a href="profile.php">Profile page</a></li>
+                    <li><a href="includes/logout.inc.php">Log out</a></li>
+                <?php else : ?>
+                    <li><a href="signup.php">Sign up</a></li>
+                    <li><a href="login.php">Log in</a></li>
+                <?php endif; ?>
             </ul>
         </nav>
     </div>

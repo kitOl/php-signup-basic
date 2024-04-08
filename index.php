@@ -5,6 +5,9 @@ include_once 'header.php';
 ?>
 
 <section class="index-intro">
+  <?php if (isset($_SESSION['useruid'])) : ?>
+    <p>Hello there <?= $_SESSION['useruid'] ?></p>
+  <?php endif; ?>
   <h1>This is An Introduction</h1>
   <p>Here is an important paragraph that explains the purpose of the werbsite</p>
 </section>
