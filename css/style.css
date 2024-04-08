@@ -1,0 +1,116 @@
+body {
+  background-color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Roboto", sans-serif;
+  color: #111;
+  line-height: 24px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  width: 250px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: lightgray;
+  line-height: 1.5;
+  display: block;
+
+  font-size: 14px;
+}
+
+button {
+  margin-top: 10px;
+  background-color: lightgray;
+  padding: 7px 15px;
+  border: 1px solid gray !important;
+}
+
+nav {
+  padding: 30px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list a {
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+section {
+  padding: 30px 0;
+  background-color: #ffffffff;
+  text-align: center;
+}
+
+.logo-header {
+  font-size: xx-large;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.index-categories h2 {
+  margin-bottom: 20px;
+}
+
+.index-categories-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.index-categories-list div {
+  padding: 10px;
+  background-color: #bdb5b3;
+  width: 180px;
+  height: 200px;
+}
+
+.signup-form {
+  /* width: 320px; */
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+}
+
+.signup-form-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
