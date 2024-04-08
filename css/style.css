@@ -43,7 +43,7 @@ input {
 }
 
 button {
-  margin-top: 10px;
+  margin: 10px 0 10px;
   background-color: lightgray;
   padding: 7px 15px;
   border: 1px solid gray !important;
@@ -101,14 +101,21 @@ section {
 }
 
 .signup-form {
-  /* width: 320px; */
+  height: 300px;
+}
+
+.signup-form p {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: blue;
 }
 
 .signup-form h2 {
   margin-bottom: 20px;
 }
 
-.signup-form-form {
+.signup-form-form form {
   display: flex;
   flex-direction: column;
   gap: 5px;

@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
     }
 
     if (pwdMatch($pwd, $pwdRepeat)) {
-        header("Location: ../signup.php?error=passworddontmatch");
+        header("Location: ../signup.php?error=passwordsdontmatch");
         exit();
     }
 
