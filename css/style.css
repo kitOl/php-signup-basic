@@ -50,12 +50,13 @@ button {
 }
 
 nav {
-  padding: 20px 15px;
+  padding: 0px 15px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #000;
+  line-height: 70px;
 }
 
 nav ul {
@@ -65,12 +66,15 @@ nav ul {
   gap: 20px;
 }
 
-.nav-list a {
+nav a,
+.nav-list li a {
   text-transform: uppercase;
   font-size: larger;
+  display: block;
+  height: 100%;
 }
 
-.nav-list a:active {
+.nav-list .active {
   color: blue;
 }
 
